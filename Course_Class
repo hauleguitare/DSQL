@@ -1,0 +1,40 @@
+class Course:
+    #Variable 
+    CURRENT_YEAR = 2022
+
+    def __init__(self, name, sex, year_born,course, classroom, year_study):
+        self.name = name
+        self.sex = sex
+        self.year_born = year_born
+        self.course = course
+        self.classroom = classroom
+        self.year_study = year_study
+
+    # Method set abttribute Object Course:
+    def set_course(self, course):
+        self.course = course
+
+    def set_classroom(self, classroom):
+        self.classroom = classroom
+
+    # Method get abttribute Object Course:
+    def get_course(self):
+        return self.course
+
+    def get_classroom(self):
+        return self.classroom
+
+    # Show info
+    def Show_info(self):
+        print("KHỐI: {}\nLỚP: {}\nNĂM HỌC: {}".format(self.course, self.classroom, self.CURRENT_YEAR))
+
+class Course_10(Course):
+    def __init__(self, course, classroom, year_study, name, sex, m_score):
+        self.name = name
+        self.sex = sex
+        self.m_score = m_score
+        super().__init__(course, classroom, year_study)
+
+class Course_11(Course):
+
+class Course_12(Course):
